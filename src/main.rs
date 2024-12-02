@@ -104,7 +104,6 @@ mod day1 {
         }
 
         println!("P2 Score: {}", score);
-
-
+        println!("Day 1 DONE! 4 Stars, it's 2:30AM and I am very tired");
     }
 }
