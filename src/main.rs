@@ -89,7 +89,7 @@ mod day1 {
 
         // PART 2
 
-        let mut scores: Vec<i64> = Vec::new();
+        let mut score: i32 = 0;
 
         for i in 0..left.len() {
             let mut count: i32 = 0;
@@ -98,13 +98,13 @@ mod day1 {
                 if left_sorted[i] == right_sorted[j] {
                     count = count + 1;
                 }
-
-                scores.push((left_sorted[i] * count).into());
             }
+
+            score = score + (left_sorted[i] * count);
         }
 
-        let score: i64 = scores.iter().sum();
-
         println!("P2 Score: {}", score);
+
+
     }
 }
